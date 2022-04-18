@@ -14,6 +14,13 @@
 		4192E570280AA0B1001FD266 /* ExpenseTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E56F280AA0B1001FD266 /* ExpenseTrackerUITests.swift */; };
 		4192E57A280AA0B1001FD266 /* ExpenseTrackerUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E579280AA0B1001FD266 /* ExpenseTrackerUIUITests.swift */; };
 		4192E57C280AA0B1001FD266 /* ExpenseTrackerUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E57B280AA0B1001FD266 /* ExpenseTrackerUIUITestsLaunchTests.swift */; };
+		4192E589280AA0E9001FD266 /* AccountSummaryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E588280AA0E9001FD266 /* AccountSummaryContainerView.swift */; };
+		4192E58B280ACC10001FD266 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E58A280ACC10001FD266 /* AccountListView.swift */; };
+		4192E58D280ACCE4001FD266 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E58C280ACCE4001FD266 /* TransactionListView.swift */; };
+		4192E58F280AEFB5001FD266 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4192E58E280AEFB5001FD266 /* API.swift */; };
+		41B057B2280C2D1C000B1D28 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B057B1280C2D1C000B1D28 /* LoginView.swift */; };
+		41B057B4280C3981000B1D28 /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B057B3280C3981000B1D28 /* AccountCreationView.swift */; };
+		41B057B6280CA2DC000B1D28 /* ExpenseCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B057B5280CA2DC000B1D28 /* ExpenseCreationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,14 @@
 		4192E575280AA0B1001FD266 /* ExpenseTrackerUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4192E579280AA0B1001FD266 /* ExpenseTrackerUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUIUITests.swift; sourceTree = "<group>"; };
 		4192E57B280AA0B1001FD266 /* ExpenseTrackerUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4192E588280AA0E9001FD266 /* AccountSummaryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryContainerView.swift; sourceTree = "<group>"; };
+		4192E58A280ACC10001FD266 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		4192E58C280ACCE4001FD266 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		4192E58E280AEFB5001FD266 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4192E590280AF373001FD266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41B057B1280C2D1C000B1D28 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		41B057B3280C3981000B1D28 /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
+		41B057B5280CA2DC000B1D28 /* ExpenseCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCreationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +109,18 @@
 		4192E55D280AA0AB001FD266 /* ExpenseTrackerUI */ = {
 			isa = PBXGroup;
 			children = (
+				4192E590280AF373001FD266 /* Info.plist */,
 				4192E55E280AA0AB001FD266 /* ExpenseTrackerUIApp.swift */,
 				4192E560280AA0AB001FD266 /* ContentView.swift */,
 				4192E562280AA0B1001FD266 /* Assets.xcassets */,
 				4192E564280AA0B1001FD266 /* Preview Content */,
+				4192E588280AA0E9001FD266 /* AccountSummaryContainerView.swift */,
+				4192E58A280ACC10001FD266 /* AccountListView.swift */,
+				4192E58C280ACCE4001FD266 /* TransactionListView.swift */,
+				4192E58E280AEFB5001FD266 /* API.swift */,
+				41B057B1280C2D1C000B1D28 /* LoginView.swift */,
+				41B057B3280C3981000B1D28 /* AccountCreationView.swift */,
+				41B057B5280CA2DC000B1D28 /* ExpenseCreationView.swift */,
 			);
 			path = ExpenseTrackerUI;
 			sourceTree = "<group>";
@@ -257,7 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B057B6280CA2DC000B1D28 /* ExpenseCreationView.swift in Sources */,
+				4192E58B280ACC10001FD266 /* AccountListView.swift in Sources */,
+				41B057B4280C3981000B1D28 /* AccountCreationView.swift in Sources */,
+				41B057B2280C2D1C000B1D28 /* LoginView.swift in Sources */,
 				4192E561280AA0AB001FD266 /* ContentView.swift in Sources */,
+				4192E58D280ACCE4001FD266 /* TransactionListView.swift in Sources */,
+				4192E589280AA0E9001FD266 /* AccountSummaryContainerView.swift in Sources */,
+				4192E58F280AEFB5001FD266 /* API.swift in Sources */,
 				4192E55F280AA0AB001FD266 /* ExpenseTrackerUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +450,7 @@
 				DEVELOPMENT_TEAM = THAPEFN7UV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTrackerUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +480,7 @@
 				DEVELOPMENT_TEAM = THAPEFN7UV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTrackerUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct ExpenseTrackerUIApp: App {
+    
+    @StateObject var authentication = Auhtentication()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if let user = authentication.user {
+                AccountListView(
+                    user: user,
+                    accounts: []
+                )
+            } else {
+                LoginView().environmentObject(authentication)
+            }
         }
     }
 }
